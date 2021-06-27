@@ -154,9 +154,6 @@ const Body = (props) => {
  
   return (
    <div className="body" style={quickview?{overflow: 'hidden'}:{}}>
-     <Link to='/dashboard'>dash</Link>
-     {/* <button onClick={()=> updateProd()}>asdd</button> */}
-
      <Switch>
       <Route exact path='/website'>
         <HelmetCont title='Home'/>
