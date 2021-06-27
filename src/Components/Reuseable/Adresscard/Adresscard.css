@@ -1,0 +1,31 @@
+.adresscard {
+  width: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: var(--light-shadow);
+  justify-content: space-between;
+  border-radius: 5px;
+  transition: all 0.3s
+}
+.adresscard .adresscardinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+  max-height: 90%;
+  overflow-y: auto
+}
+.adresscardinfo::-webkit-scrollbar {
+  width: 2px
+}
+.controls span {
+  margin-right: 10px
+}
+.activeadresscard {
+  background-color: var(--light);
+  box-shadow: none
+}
+.activeadresscard {}

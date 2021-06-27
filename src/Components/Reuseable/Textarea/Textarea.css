@@ -1,0 +1,24 @@
+textarea {
+  border: solid 1px #ddd;
+  padding: 10px;
+  resize: vertical;
+  outline: none;
+  transition: color 1s;
+  width: 100%;
+  color: #000
+}
+.textareacont {
+  width: 100%
+}
+.textareacont span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  pointer-events: none;
+  color: #ddd;
+  transition: all 0.3s
+}
+textarea:focus + span, textarea:valid + span{
+  opacity: 0;
+  left: 15px
+}

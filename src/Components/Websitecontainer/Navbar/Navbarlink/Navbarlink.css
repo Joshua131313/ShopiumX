@@ -1,0 +1,21 @@
+.navbarlink span {
+  text-transform: uppercase;
+  font-size: 13px
+}
+.navbarlink:hover, .activelink {
+  color: var(--theme-color)
+}
+.right i:hover {
+  color: var(--theme-color)
+}
+.navbarlink div {
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: var(--theme-color);
+  transition: all 0.3s;
+}
+.navbarlink:hover div, .activelink div{
+  width: 80%
+}

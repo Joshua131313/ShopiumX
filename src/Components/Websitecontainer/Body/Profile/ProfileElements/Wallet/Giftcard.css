@@ -1,0 +1,56 @@
+.giftcard {
+  height: 50vh;
+  box-shadow: var(--light-shadow);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+
+.slides .activeslidetab {
+  left: 0
+}
+.giftcard h3 {
+  font-size: 14px;
+  justify-content: space-between
+}
+.giftcardinfo input {
+  width: 100%
+}
+.cardinforow {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+.giftcard .logo {
+  justify-content: flex-start;
+  margin-bottom: 20px
+}
+.giftcard .logo {
+  font-size: 13px 
+}
+.giftcard .logo img {
+  width: 20px;
+  height: 20px
+}
+.templates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0
+}
+.secondslide {
+  width: 100%;
+  height: 35vh;
+  overflow-y: scroll
+}
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+.confirmation .appbtn:active {
+  transform: initial
+}

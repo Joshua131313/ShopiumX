@@ -1,0 +1,23 @@
+.benefits {
+  display: flex;
+  padding: 0 10%;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+.savedproducts {
+  margin-top: 40px;
+  padding: 40px}
+.innersavedproducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px
+}
+@media (max-width: 700px) {
+  .benefits {
+    padding: 0 10px
+  }
+}

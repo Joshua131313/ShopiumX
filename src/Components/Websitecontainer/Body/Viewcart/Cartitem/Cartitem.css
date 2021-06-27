@@ -1,0 +1,108 @@
+.cartitem {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px
+}
+.cartitem img {
+  width: 100%;
+  height: 100%
+}
+.cartiteminfo a {
+  width: 100px;
+  height: 140px;
+}
+.cartiteminfo {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: 60%
+}
+.rightcartitem > div {
+  width: 100%;
+  align-items: center;
+  justify-content: center
+}
+.rightcartitem {
+  display: flex;
+  width: 40%;
+  gap: 10px;
+  justify-content: space-between
+}
+.cartiteminfoin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  max-width: 70%;
+}
+.cartiteminfoin strong{
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.cartiteminfoin > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+.grayspancont {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: capitalize;
+  width: 100%;
+
+}
+.grayspancont span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.qtycont .plusminus {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.qtycont {
+  display: flex;
+}
+.pricecont {
+  text-align: center;
+}
+.priceconta {
+  display: flex;
+  flex-direction: column
+}
+.qtycont input {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 10px
+}
+.qtycont button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 10px
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+ .saveforlater {
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.3s
+}
+.saveforlater:hover {
+  color: #333
+}
+.pricecont .pricetag h3 {
+  font-size: 14px
+}
+.pricecont .pricetag span {
+  font-size: 10px;
+}
+.cartcontrol {
+  display: flex;
+  gap: 10px
+}

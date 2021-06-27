@@ -1,0 +1,84 @@
+.dealoftheday {
+  display: flex;
+  height: 80vh;
+  padding: 20px 10%;
+  background-color: #ecebe9;
+  margin-top: 40px;
+  justify-content: center
+}
+.dealoftheday .title {
+  margin: 10px 0
+}
+.dealoftheday > div {
+  max-width: 100%;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+.dealinfo .pricetag {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+.name {
+  font-size: 25px
+}
+.pricetag .graytext {
+  text-decoration: line-through;
+}
+.dealoftheday img {
+  height: 100%;
+  object-fit: contain
+} 
+.dealinfo {
+  background-color: #fff;
+  padding: 20px;
+  padding-bottom: 50px;
+
+}
+.dealinfo .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start
+}
+.timer {
+  display: flex;
+  transform: translateY(30px) translateX(-50%);
+  left: 50%;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 10px;
+  z-index: 1;
+  gap: 10px;
+  justify-content: center
+}
+.timerbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100px;
+  height: 50px;
+}
+.timer .graytext {
+    text-transform: uppercase;
+    font-size: 9px
+}
+.dealoftheday button:hover i {
+  margin-left: 25px
+}
+@media (max-width: 750px) {
+  .dealoftheday {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+  }
+}
+@media (max-width: 600px) {
+
+}

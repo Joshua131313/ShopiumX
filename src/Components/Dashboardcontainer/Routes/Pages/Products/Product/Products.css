@@ -1,0 +1,260 @@
+.innerallproducts {
+  width: 100%;
+  margin-top: 20px
+}
+.dashboard .dashboardproduct {
+  width: 200px;
+  box-shadow: var(--light-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.darkdashboard .dashboardproduct {
+  box-shadow: var(--gray-shadow)
+}
+.darkdashboard .dashboardproduct h3 {
+  color: #fff
+}
+.dashboardproduct .productimg img{
+  height: 200px;
+  display: block
+}
+.dashboardproduct .productinfo    {
+  justify-content: flex-start;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px
+}
+.dashboardproduct .productinfo   h3 {
+  font-size: 13px
+}
+.productcontrolbtn {
+  display: flex;
+  gap: 10px;
+}
+.editproduct {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  padding: 20px 15%
+}
+.darkdashboard .editproduct {
+  background-color: #222
+}
+.darkdashboard .appbtn {
+  background-color: #333
+}
+.darkdashboard h3, .darkdashboard .accordionsummary, .darkdashboard .accordionsummary i, .darkdashboard .appinput span, .darkdashboard .Mui-expanded, .darkdashboard small {
+  color: #fff
+}
+.darkdashboard .MuiAccordionSummary-root:hover, .darkdashboard .MuiAccordionSummary-root:hover i {
+  color: #fff
+}
+
+.darkdashboard .editproduct .subimgs .imgupload, .editproduct .imgplaceholder {
+  background-color: #333
+}
+.darkdashboard .editproduct .subimgs .imgupload i , .editproduct .imgplaceholder i  {
+  color: #fff
+}
+
+.dashboard .MuiPaper-root {
+  background-color: #f9f9f9
+}
+.darkdashboard .MuiPaper-root {
+  background-color: #333
+}
+.dashboard .MuiPaper-root::-webkit-scrollbar {
+  height: 0;
+}
+.productcontrolbtn button {
+  width: 100%;
+} 
+.productcontrolbtn > .appbtn {
+  background-color: var(--red);
+}
+.productdetailsedit {
+  margin-top: 20px;
+  grid-gap: 30px;
+  display: flex;
+  flex-direction: column
+}
+.productdetailsedit input {
+  background-color: #f9f9f9;
+  margin-top: 5px;
+
+}
+.productdetailsedit .appinput {
+
+}
+.productdetailsedit textarea {
+  border: none;
+  min-height: 60px;
+  margin-top: 5px;
+  background-color: #f9f9f9;
+}
+.productdetailsedit div  {
+  display: flex;
+  flex-direction: column;
+}
+.productdetailsedit div select {
+  border: none;
+  background-color: #f9f9f9;
+}
+.productdetailsedit div small {
+  font-size: 13px
+}
+.productdetailsedit .imguploaders {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  background-color: #f9f9f9
+}
+.darkdashboard .productdetailsedit .imguploaders {
+  background-color: #333
+}
+.mainimg i {
+  font-size: 25px
+}
+.dashboard .couponcontrols {
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  display :flex
+}
+.accordioncont {
+  flex-wrap: wrap
+}
+.accordiontab .appinput, .accordiontab .appinput input {
+  width: 100%
+}
+.couponitem {
+  gap: 10px;
+  margin: 10px 0
+}
+.innercoupons {
+  margin: 10px 0
+}
+.innercoupons .accordioncont {
+  gap: 15px
+}
+.editproduct .productdetailsedit .innercoupons .accordionsummary {
+  font-size: 13px;
+  font-weight: bold
+}
+.innercoupons .appinput span {
+  font-size: 10px
+}
+.editsizecolors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.couponcontrols .appbtn {
+  width: 100%
+}
+.imguploaders .imgupload img {
+  border-radius: 0;
+  cursor: pointer
+}
+.editproduct .mainimg img {
+  height: 300px;
+  width: 300px
+}
+.editproduct .subimgs .imgupload, .editproduct .imgplaceholder {
+  width: 50px;
+  height: 75px;
+  background-color: #f9f9f9
+}
+.editproduct .colors {
+  gap: 10px
+}
+.editproduct .chk {
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+  color: #fff
+}
+.darkdashboard .editproduct .chk .checkboxcont 
+{
+  border: solid 1px #fff
+}
+
+.editproduct .sizelabel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  justify-content: space-between
+}
+.darkdashboard .sizelabel span {
+  color: #fff
+}
+.salecontrol {
+  gap: 5px
+}
+.dashboard .editproduct .sizelabel input {
+  width: 75%
+}
+.editproduct .productdetailsedit .accordionsummary {
+  flex-direction: row;
+  font-size: 10px
+}
+
+.editproduct .MuiIconButton-label i {
+  font-size: 10px
+}
+.editproduct .sizelabel input {
+  width: 100%
+}
+.selectededitsize .accordiontab  {
+  margin-top: 10px
+}
+.dashboard .editsize {
+  padding: 0 10px
+}
+.dashboard .selectededitsize .accordiontab .accordionsummary{
+  background-color: var(--light);
+
+}
+.editsizes > span {
+  font-size: 13px
+}
+.editsizes h3 {
+  margin-bottom: 15px
+}
+.controltns {
+  gap: 10px
+}
+.darkdashboard .MuiRating-iconEmpty {
+  color: #333
+}
+.couponscontainer {
+  max-width: 600px;
+}
+@media (max-width: 750px) {
+  .productdetailsedit .imguploaders {
+    flex-direction: column;
+  }
+  .productdetailsedit {
+    display: flex;
+    flex-direction: column
+  }
+  .editproduct .imgcontupload img {
+    width: 100%
+  }
+  .productdetailsedit .subimgs{
+    flex-direction: row;
+    height: 100px
+  }
+  .productdetailsedit .subimgs .imgupload {
+    width: 100%;
+    height: 100px
+  }
+  .productdetailsedit .subimgs .imgupload img {
+    width: 100%;
+    height: 100px
+  }
+}

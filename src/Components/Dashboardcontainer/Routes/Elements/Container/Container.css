@@ -1,0 +1,100 @@
+.containerd {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 450px;
+
+}
+.darkdashboard .containerd {
+  background-color: #222
+}
+.containerd {
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.containerd h2 {
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 20px
+}
+.darkdashboard .containerd h2 {
+  color: #fff
+}
+.productssold {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+.quickorderview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.leftview {
+  display: flex;
+  align-items: center;
+  gap: 15px
+}
+.rightview {
+  font-size: 10px;
+}
+.leftview h3 {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column
+}
+.leftview .amountorder {
+  font-size: 12px;
+  color: var(--green);
+}
+.propscont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px
+}
+.containericon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme-color);
+  color: #fff;
+  border-radius: 50%;
+}
+.thirdcont {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center
+}
+.thirdcont .containerd {
+    width: 100%;
+}
+.propstitle h2 {
+  font-size: 17px
+}
+.propscont .user {
+  padding: 0 10px;
+  border-radius: 4px;
+  height: 50px;
+  box-shadow: var(--light-shadow)
+}
+.darkdashboard .propscont .user {
+  box-shadow: 0px 0px 7px 1px rgb(49 49 49);
+}
+.darkdashboard .user  a {
+  color: #fff
+}
+.darkdashboard .propscont h3, .darkdashboard time {
+  color: #fff
+}
+@media (max-width: 800px) {
+  .dashboard .halfcont, .dashboard .thirdcont {
+    display: flex;
+    flex-direction: column;
+  }
+}

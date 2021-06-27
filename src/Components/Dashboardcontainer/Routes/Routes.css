@@ -1,0 +1,12 @@
+.routes {
+  background-color: #f9f9f9;
+  transition: all 0.3s;
+  padding: 0 20px;
+  overflow: auto
+}
+.routes::-webkit-scrollbar{
+  height: 0;
+}
+.darkdashboard .routes {
+  background-color: rgb(66, 66, 66)
+} 

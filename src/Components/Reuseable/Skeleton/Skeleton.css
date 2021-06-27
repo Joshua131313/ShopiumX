@@ -1,0 +1,40 @@
+.skeleton {
+  width: 250px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeInOut 1.4s infinite
+}
+.skeletonimg {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(233, 233, 233);
+}
+.skeletoncolors  {
+  display: flex;
+  gap: 10px;
+  justify-content: center
+}
+.skeletoncolors span {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 50%;
+}
+.skeletontitle {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(233, 233, 233);
+}
+.skeletonprice {
+  width: 50%;
+  height: 20px;
+  background-color: rgb(233, 233, 233);
+}
+
+@keyframes fadeInOut {
+  0% {opacity: 1}
+  50% {opacity: 0.3}
+  100% {opacity: 1;}
+}

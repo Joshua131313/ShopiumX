@@ -1,0 +1,50 @@
+.dashboardnav {
+  background-color: #fff;
+  margin: 20px 0;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.dashboardnav .appbtn {
+  padding: 5px;
+  gap: 10px;
+  border-radius: 5px;
+  height: 30px
+}
+.darkdashboard .dashboardnav {
+  background-color: #222
+}
+.leftpartd {
+  gap: 10px
+}
+.leftpartd, .leftpartd .appinput, .dashsearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.leftpartd .appinput input {
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  padding-left: 25px
+}
+.leftpartd .appinput i {
+  position: absolute;
+  left: 5px;
+  z-index: 1;
+}
+.leftpartd div .appbtn {
+  border-radius: 0 5px 5px 0
+}
+@media (max-width: 800px) {
+
+  .dashboardnav .dashsearch {
+    display: none
+  }
+}

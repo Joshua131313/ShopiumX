@@ -1,0 +1,294 @@
+.deal {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #F9F9F9;
+  font-size: 14px;
+  text-align: center
+}
+#top {
+  position: absolute;
+  top: 0;
+}
+
+.deal i  {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 10%;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  transition: all 0.3s;
+}
+.height {
+  height: 100px
+}
+.navactive {
+  top: 0;
+  background-color: #fff;
+  height: 90px;
+  box-shadow: var(--light-shadow);
+}
+.navactive + .height + .body .carousel .progress {
+  opacity: 0;
+}
+.navbar .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.activeleft .search, .fixedsearch {
+  display: flex
+}
+.left .leftcont {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.3s
+}
+.activeleft .leftcont {
+  display: none;
+}
+.navbar .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content:flex-end;
+  width: 80%
+}
+.right > div{
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 400px;
+  max-width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none
+}
+.search .appinput, .search input {
+  width: 100%;
+}
+.iconright {
+  gap: 20px
+}
+.qtycart {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--theme-color);
+  width: auto;
+  padding: 1px;
+  min-width: 17px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  min-height: 17px;
+  border-radius: 50%;
+}
+.navbar .navlinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.left .logo > span {
+  font-size: 19px;
+}
+.left .logo img {
+  width: 30px;
+  height: 30px
+}
+.mobbtn {
+  display: none
+}
+.searchdropdown {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+  top: 60px;
+  padding: 5px 10px;
+}
+.fixedmenu {
+  position: fixed;
+  left: -200vh;
+  top: 0;
+  height: 100vh;
+  width: 80%;
+  background-color: #fff;
+  z-index: 1100;
+  border-radius: 0 10px 10px 0;
+  padding: 40px 10%;
+  box-shadow: var(--light-shadow);
+  transition: all 0.3s;
+}
+.fixedmenuactive {
+  left: 0;
+}
+.fixedmenu .logo {
+  justify-content: flex-start
+}
+.fixedmenulinks .navbarlink div {
+  display: none;
+}
+.fixedmenulinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fixedsearch {
+  margin: 20px 0;
+  margin-top: 30px
+}
+.fixedmenulinks .navbarlink {
+  border-bottom: solid 1px #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+
+}
+.fixedmenulinks .navbarlink::after {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Pro';
+  margin-right: 15px
+}
+.fixedsearch input {
+  width: 100%
+}
+.scrollupicon {
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none
+}
+.activescrollupicon {
+  opacity: 0.5;
+  pointer-events: initial;
+  bottom: 25px;
+}
+.activescrollupicon:hover {
+  opacity: 1;
+}
+.searchwindow {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--overlay);
+  z-index: 10000;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.searchwindow-enter-done {
+  opacity: 1;
+}
+
+.searchwindow > div {
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0%;
+  transition: all 0.3s;
+}
+.searchwindow-enter-done >  div {
+  top: 10%;
+}
+.searchwindow > div input, .searchwindow .searchdropdown {
+  width: 100%
+}
+.searchwindow > div input, .searchwindow > div .appbtn {
+  height: 50px
+}
+.searchwindow > div .appbtn {
+  width: 50px
+}
+.searchwindow .fa-times {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 35px
+}
+@media (max-width: 780px) {
+  .navbar {
+    padding: 10px 15px
+  }
+}
+@media (max-width: 680px) {
+  .navbar {
+    padding: 10px 10%;
+    flex-direction: row-reverse;
+    height: 80px;
+  }
+  .height {
+    height: 80px
+  }
+  .navactive {
+    height: 70px
+  }
+  .navbar .navlinks {
+    display: none;
+ 
+  }
+
+  .left .leftcont {
+    justify-content: flex-start
+  }
+  .navbar .right {
+    justify-content: flex-end;
+    width: 100%
+  }
+
+  .mobbtn {
+    display: block
+  }
+}
+@media (max-width: 500px) {
+  .search {
+    position: absolute;
+    top: 55px;
+    max-width: 300px;
+    transform: initial;
+    left: initial;
+    background-color: #fff;
+  }
+  .search input {
+    width: 100%
+  }
+ .activeleft .leftcont {
+    display: block
+  }
+
+}

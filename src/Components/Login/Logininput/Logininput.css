@@ -1,0 +1,59 @@
+.logininput, .loginbtn {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: transparent;
+  border-bottom: solid 1px rgb(150, 150, 150);
+}
+
+.logininput {
+  padding-left: 35px;
+}
+.logininputlabel {
+  width: 100%;
+}
+.logininputlabel i {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  color: #000;
+  font-size: 14px
+}
+.logininputlabel i:nth-of-type(2){
+  left: initial;
+  right: 10px;
+  opacity: 0;
+}
+.logininput:valid, .logininput:focus {
+}
+.logininput:valid + i, .logininput:focus + i {
+  color: var(--theme-color);
+}
+.logininput:valid + i + i, .logininput:focus + i + i {
+  opacity: 1;
+}
+
+
+.logincont .loginbtn {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.logincont .loginbtn:hover {
+  background-color: #333
+}
+.loginbtn:hover i{
+  right:20px
+}
+.loginbtn i {
+  position: absolute;
+  right: 30px
+}
+
+.logininput:focus {
+}

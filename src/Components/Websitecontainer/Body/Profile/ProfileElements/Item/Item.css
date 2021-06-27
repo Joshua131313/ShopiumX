@@ -1,0 +1,14 @@
+.item td {
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 150px;
+  text-transform: capitalize
+}
+.item .ordereditems span::after{
+  content: ', '
+}
+.item .ordereditems span:last-of-type::after {
+  content: ''
+}

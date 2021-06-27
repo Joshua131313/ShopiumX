@@ -1,0 +1,23 @@
+.breadcrumbs {
+  height: 150px;
+  width: 100%;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10%
+}
+.breadcrumbs h2 {
+  font-weight: 800;
+}
+.breadlink {
+  font-size: 12px;
+  text-transform: capitalize
+}
+.breadlink:hover {
+  color: #000000
+}
+.breadlink i{
+  margin: 0 10px
+}

@@ -1,0 +1,29 @@
+.collections {
+  display: flex;
+  height: 45vh;
+  max-height: 340px;
+  gap: 5px
+}
+.collectionttitle {
+  text-align: center;
+  margin: 30px 0;
+  margin-bottom: 50px
+}
+.collectionttitle h4 {
+  color: var(--gray-text)
+}
+@media (max-width: 700px) {
+  .collectioncontainer {
+    height: auto
+  }
+  .collections {
+    flex-direction: column;
+    max-height: initial;
+    height: 100%
+  }
+  .collections .collection {
+    min-height: 300px;
+    
+  }
+
+}

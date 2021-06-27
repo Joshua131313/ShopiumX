@@ -1,0 +1,45 @@
+.trackorder {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  width: 750px;
+  padding: 50px 20px;
+  margin: 100px 50px 100px 10%;
+  max-width: 90%;
+}
+.trackorder .appinput {
+  margin: 15px 0
+}
+.trackorder .appbtn {
+  margin-top: 15px
+}
+.trackordercont {
+  width: 650px;
+  max-width: 90%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.trackingcontrols {
+  display: flex;
+  flex-direction: column
+}
+.trackorder h2 {
+  font-size: 19px
+}
+
+.trackingcontrols .appinput input {
+  background-color: #fff
+}
+.trackingcontrols .appbtn {
+  width: 175px;
+  height: 45px;
+  max-width: 100%;
+  text-transform: uppercase
+}
+@media (max-width: 800px) {
+  .trackorder {
+    margin: 50px 0;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}

@@ -1,0 +1,28 @@
+.prev i {
+  margin-right: 10px
+}
+.slidesbtn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px
+}
+.slides .slidetab {
+  width: 100%;
+  left: 150%;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column
+}
+.slides .lefttab {
+  left: -150%
+}
+.nextprevtab .slides {
+  display: flex;
+  overflow: hidden;
+  height: 35vh
+}
+.nextprevtab .appbtn:active {
+  transform: scale(0.96)
+}

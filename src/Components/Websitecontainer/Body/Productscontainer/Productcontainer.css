@@ -1,0 +1,60 @@
+.projectcontainer {
+  padding: 20px 20%;
+  margin-top: 100px
+}
+.containertitle {
+  text-align: center;
+  margin-top: 30px
+}
+.containertitle h4 {
+  color: var(--gray-text)
+}
+.products {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  scroll-behavior: smooth
+}
+.viewall {
+  padding: 10px 20px;
+  height: 50px
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px
+}
+.viewall:hover i {
+  margin-left: 25px
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.filters span {
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+  transition: all 0.3s
+}
+.filters span:hover {
+  color: #000;
+}
+.filters .activefilteritem, .filters .activefilteritem:hover {
+  color: var(--theme-color)
+}
+.skeletons {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px
+}
+.slideright {
+  position: absolute
+}

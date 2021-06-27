@@ -1,0 +1,323 @@
+
+
+
+
+.profile {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  padding: 20px 10%;
+  background-color: #f9f9f9;
+  grid-gap: 20px
+}
+.body .profile + .footer {
+  margin-top: 0
+}
+
+.linkstab {
+  display: flex;
+  flex-direction: column
+}
+.linkstab .appbtn {
+  margin-top: 10px
+}
+.linkstab a {
+  padding: 8px 5px;
+  margin: 5px 0;
+  padding-left: 10px;
+  border-radius: 3px;
+  font-size: 13px
+}
+.linkstab a i {
+  margin-right: 10px
+}
+.activesidebarlink, .linkstab a:hover {
+  color: var(--theme-color);
+  background-color: var(--light)
+}
+.activesidebarlink i, .linkstab a:hover i{
+  color: var(--theme-color);
+}
+.routestab {
+  min-width: 0
+}
+.container {
+  overflow-x: auto
+}
+.container::-webkit-scrollbar {
+  height: 2px
+}
+.routestab::-webkit-scrollbar {
+  width: 5px
+}
+.accountroute h3 {
+  margin-bottom: 12px
+}
+.container  {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.profile .trackorder {
+  margin: 20px 0;
+  max-width: initial;
+  background-color: #fff;
+  padding: 40px;
+  width: 100%
+}
+.profile .trackorder .trackordercont {
+  width: 100%;
+  max-width: initial;
+}
+.profile .trackorder .trackingcontrols input {
+  background-color: #f9f9f9
+}
+ .split {
+  flex-wrap: wrap  
+}
+.profile .modalbtn {
+  min-width: 140px;
+}
+.adresses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+.addadress .inputcontainer, .addadress .adress {
+  display: flex;
+  flex-direction: column
+}
+.addadress {
+  width: 400px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.addadress, .cardpopup {
+  opacity: 0;
+  top: 150px;
+  transition: all 0.3s
+}
+.modal-enter-done .addadress, .modal-enter-done .cardpopup {
+  opacity: 1;
+  top: 0
+}
+.addadress::-webkit-scrollbar {
+  width: 5px
+}
+.addadress input {
+  background-color: #fff;
+  border: solid 1px #ddd
+}
+.addadress .appbtn {
+  width: 100%;
+  margin-top: 20px
+}
+.addadress .split {
+  flex-direction: column
+}
+.payment h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.cards h4 span {
+  display: flex;
+  flex-direction: column
+}
+.payment h4:first-of-type {
+  margin-bottom: 40px
+}
+.payment .sidetabs {
+  flex-direction: column
+}
+.payment .sidetabs .tablinks {
+  flex-direction: row;
+
+}
+.payment .sidetabs .tablinks .link::after {
+  bottom: -3px;
+  right: initial;
+  width: 0%;
+  height: 3px;
+  bottom: -3px;
+  top: initial
+}
+.payment .sidetabs .tablinks .activelink::after {
+  width: 100%
+} 
+.payment .tablinks {
+  border-right: none;
+  border-bottom: solid 3px #eee
+}
+.cardpopup {
+  width: 500px;
+  max-width: 80%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+}
+.giftcardpopup {
+  width: 650px
+}
+.cardpopup .checkoutselect {
+  background-color: #f8f8f8;
+  border: none;
+  width: 100%
+}
+.cardpopup .creditinputs .appinput {
+  margin-bottom: 20px;
+}
+.cardpopup .split {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+.cardpopup .creditinputs .appbtn {
+  width: 100%;
+  margin-top: 20px
+}
+#field-wrapper {
+  background-color: #f9f9f9;
+}
+.fURVnH {
+  width: 100%
+}
+.fURVnH input {
+  padding: 0
+}
+.cardpopup .fURVnH {
+  margin-bottom: 20px
+}
+.optionsamount {
+  display: flex;  
+  gap: 10px
+}
+.optionsamount .appbtn {
+  border: solid 1px #333;
+  background-color: #fff;
+  color: #333;
+  margin-top: 0
+}
+.optionsamount .appinput {
+  margin-bottom: 0
+}
+.optionsamount .selectedprice, .optionsamount .appbtn:hover {
+  border: solid 1px transparent;
+  color: #fff;
+  background-color: #333
+}
+.profile .giftcard {
+  margin-top: 20px
+}
+.profile .rccs__card--front,.profile .rccs__card--back {
+  border-radius: 10px
+}
+.accordionitem {
+  width: 100%;
+  min-width: 400px;
+}
+.profile .accordioncont{
+  overflow-x: auto
+}
+.profile .accordioncont::-webkit-scrollbar {
+  height: 5px
+}
+.accordionlink:hover {
+  text-decoration: underline
+}
+.profile .userimg .imgcontupload {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.profile .circle, .profile .imguploadskeleton {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+.profile .imguploadskeleton {
+  background-color: rgb(235, 235, 235);
+  border-radius: 50%;
+  animation: skeleton 2.2s infinite
+}
+.profile .iconskeleton {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+.profile .imgupload {
+  width: 60px;
+  display: block
+}
+.profile .userimg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.userinputs {
+  margin-top: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+.userinputs input {
+  width: 100%;
+  background-color: #fff;
+}
+.name {
+  display: flex;
+  flex-direction: column
+}
+.name small {
+  font-size: 10px
+}
+@keyframes skeleton {
+  0% {opacity: 1}
+  50% {opacity: 0.6}
+  100% {opacity: 1}
+}
+.profile .imgupload i {
+  position: absolute;
+  bottom: -5px;
+  width: 25px;
+  height: 25px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -5px;
+  border-radius: 50%;
+  font-size: 12px
+}
+@media (max-width: 800px) {
+  .profile .trackorder {
+    padding: 25px
+  }
+}
+@media (max-width: 600px) {
+  .userinfotab .userimg {
+  flex-direction: column;
+  gap: 25px;
+  justify-content: flex-start;
+  align-items: flex-start
+ } 
+
+}
+@media (max-width: 500px) {
+  .cardpopup .split {
+    display: flex
+  }
+  .cardpopup .split .appinput {
+    width: 100%
+  }
+}

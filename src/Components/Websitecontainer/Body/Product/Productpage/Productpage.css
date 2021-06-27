@@ -1,0 +1,156 @@
+.productpage {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 20px 15%;;
+  height: auto;
+  flex-direction: column
+}
+.productcontainer  {
+  padding: 0 5%
+}
+.productinfo {
+  display: flex;
+  height: auto;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 100%
+}
+.productpageimg {
+  width: 50%;
+  height: 500px;
+  max-width: 400px
+}
+.productpageimg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0
+}
+.savedforlaterbtn button {
+  width: 100%
+}
+.thumbnailcont {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+.activethumbnail {
+  border: solid 1px rgb(192, 192, 192)
+}
+.thumbnailcont img {
+  width: 40px;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.productcontparent {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  padding-top: 0
+}
+.productpagecont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+.productpage input {
+  width: 45px;
+  height: 30px;
+}
+.productpage .plusminus {
+  justify-content: flex-end
+}
+.productpage .plusminus button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+.productpagecont .productdescip {
+  color: var(--gray-text);
+  font-size: 12px;
+  max-height: 90px;
+  overflow-y: scroll
+
+}
+.productdescip::-webkit-scrollbar {
+  width:0
+}
+.productpagecont .productdetail {
+  margin: 10px 0
+}
+.productpagecont .productdetail span {
+  font-size: 12px
+}
+.productpagecont .productcontrols {
+  display: flex;
+  width: 100%;
+
+  flex-direction: column-reverse;
+  gap: 20px
+}
+.productpagecont .productcontrols > .appbtn i{
+  margin-right: 10px
+}
+.imgwrapper {
+  width: 100%;
+  height: 100%;
+}
+.wishlistbtn i {
+}
+.productcontainer  .horizontal-menu{
+  margin-bottom: 20px
+}
+ .browsetitle {
+  padding-left: 10px;
+  margin-bottom: 10px
+}
+@media (max-width: 1000px) {
+  .productpage {
+    padding: 20px 5%;;
+
+  }
+}
+@media (max-width: 690px) {
+  .productpage {
+    padding: 20px
+  }
+  .productpagecont .productcontrols {
+    justify-content: flex-end
+  }
+  /* .productcontrols .wishlistbtn {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    justify-content: center
+  }
+  .productcontrols .wishlistbtn span {
+    display: none
+  } */
+  .productpagecont  .productcontrols > .appbtn i {
+    margin-right: 0;
+    font-size: 15px
+  }
+}
+
+@media (max-width: 600px) {
+  .productinfo {
+    flex-direction: column;
+    align-items: center
+  }
+  .productinfo > div {
+    width: 100%
+  }
+  .productinfo h2 {
+    margin-top: 20px
+  }
+}

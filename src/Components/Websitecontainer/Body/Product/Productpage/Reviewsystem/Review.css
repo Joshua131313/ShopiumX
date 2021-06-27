@@ -1,0 +1,56 @@
+.review {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0
+}
+.review img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 10px
+}
+.reviewleft {
+  display: flex;
+  gap: 10px;
+  width: 70%
+}
+
+.reviewright {
+  opacity: 1;
+  transition: all 0.3s;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.review textarea {
+  resize: none;
+  min-height: 20px;
+  width: 100%;
+}
+.review textarea:disabled {
+  outline: none;
+  border: none;
+  background-color: #fff
+}
+.save {
+  display: flex;
+  padding: 0 10px;
+  gap: 10px
+}
+.save small{
+  font-size: 10px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s
+}
+.save small:hover {
+  color: #333
+}
+.reviewleft > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -1,0 +1,96 @@
+.giftcards {
+
+}
+
+.giftcardbuyer img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.imgleftskeleton {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  animation: skeleton 2.2s infinite;
+  display: block;
+  position: relative;
+}
+
+@keyframes skeleton {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1
+  }
+}
+.giftcardbuyer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px
+}
+.darkdashboard .giftcardbuyer span {
+  color: #fff;
+  font-size: 12px
+}
+
+.giftcards > h3 {
+  margin-bottom: 20px
+}
+.buyergiftcards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-x: auto;
+  align-items: center;
+  width: 100%
+}
+.giftcarditem {
+  width: 100%
+}
+.dashboard .giftcarditem i {
+  color: #fff
+}
+.leftview img {
+ width: 25px;
+  height: 25px;
+  border-radius: 50%
+}
+.leftview .rskeletonimg {
+  width: 25px;
+  height: 25px;
+}
+.sorttitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px
+}
+.sorttitle select {
+  padding: 5px
+}
+.innergiftcards {
+
+}
+.reversed {
+   display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+  background-color: #fff
+}
+.darkdashboard .reversed {
+  background-color: #222
+}
+.dashboard .MuiTable-root {
+ overflow: hidden;
+}
+@media (max-width: 670px) {
+  .sorttitle {
+    flex-direction: column;
+    gap: 15px
+  }
+}

@@ -1,0 +1,34 @@
+.productcarddashboar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+ .prodimgdescrip,.imgprod img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+} 
+.imgprod img {
+  background-color: #eee
+}
+.imgprod  {
+  width: 60px;
+  height: 80px;
+}
+.prodimgdescrip, .prodpsale {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold
+}
+.prodimgdescrip h3 {
+  font-size: 15px;
+  margin-bottom: 10px
+}
+.darkdashboard .productcarddashboar{
+  color: #fff
+}
+.descripprod a:hover {
+  text-decoration: underline
+}

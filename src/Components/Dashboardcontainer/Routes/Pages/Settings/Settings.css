@@ -1,0 +1,86 @@
+.innersettings .userimg {
+  display: flex;
+  align-items: center;
+  margin-top: 20px
+}
+.innersettings .imgupload {
+  width: 60px;
+  height: 60px;
+}
+.dashboard .name {
+  margin-left: 10px
+}
+.darkdashboard .name {
+  color: #fff
+}
+.innersettings .imgloader, .innersettings .imgcontupload {
+  width: 100%;
+  height: 100%;
+}
+.userimg .imguploadskeleton {
+  width: 100%;
+  height: 100%;
+}
+.innersettings .fa-camera {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px
+}
+.innersettings input {
+  background: #f9f9f9
+}
+.userids {
+  margin-top: 20px
+}
+.inneruserids {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0
+}
+.darkdashboard h4 {
+  color: #fff
+}
+.darkdashboard .alloweduser, .darkdashboard .alloweduser i {
+  color: #fff
+}
+.alloweduser {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.alloweduser .leftuser {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+.alloweduser img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%
+}
+.userids {
+  max-width: 400px;
+  margin: 30px 0
+}
+.userids .couponcontrols .appinput {
+  min-width: 70%
+}
+@media (max-width: 600px) {
+  .innersettings .imgupload {
+    width: 50px;
+    height: 50px;
+  }
+  .name {
+    font-size: 15px
+  }
+}

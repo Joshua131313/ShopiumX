@@ -1,0 +1,92 @@
+.accountmodal {
+  position: fixed;
+  top: 0;
+  background-color: var(--overlay);
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.body .ordercomplete  {
+  padding: 0 17%;
+}
+.createtitle {
+  max-width: 350px;
+  height: 70%;
+  background-color: #fff;
+  padding: 20px 30px;
+  opacity: 0;
+  transition: all 0.3s;
+  top: 50%;
+}
+.modal-enter-done .createtitle {
+  opacity: 1;
+  top: 0
+}
+
+.createtitle h2 {
+  text-align: center;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.createtitle h2 small {
+  font-size: 14px
+}
+.createtitle button {
+  width: 100%;
+}
+.createtitle input, .createtitle button {
+  margin: 10px 0
+}
+.ordercompletedsummary {
+  
+}
+.ordercompletedsummary small  span {
+  margin: 15px 0;
+  display: flex;
+  gap: 5px
+}
+.leftcomplete  {
+  padding: 15px 0;
+  min-width: 250px;
+}
+.leftcomplete button {
+  max-width: 100%;
+  width: 100%;
+}
+.createaccountwindow {
+  border: solid 1px #333;
+  padding: 15px;
+  margin-top: 20px
+}
+.createaccountwindow h3 {
+  font-size: 16px
+}
+.createaccountwindow ul {
+  padding-left: 20px
+}
+.createaccountwindow li {
+  font-size: 14px;
+  margin: 15px 0
+}
+.app .ordercomplete.checkout{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.app .ordercomplete.checkout .summaryside {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 400px;
+  max-width: 90%;
+}
+@media (max-width: 1100px) {
+ .body .ordercomplete {
+    padding: 20px
+  }
+}

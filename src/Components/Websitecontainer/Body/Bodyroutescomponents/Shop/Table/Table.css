@@ -1,0 +1,7 @@
+.sidebannerproducts .projectcontainer {
+  margin-top: 0;
+  padding: 0;
+}
+.body .MuiPaper-root::-webkit-scrollbar {
+  height: 0
+}

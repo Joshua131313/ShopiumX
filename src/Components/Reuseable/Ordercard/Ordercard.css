@@ -1,0 +1,152 @@
+.orderdescriptiont {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between
+}
+.orderdescriptiont {}
+.odleft, .odright {
+  display: flex;
+  gap: 10px
+}
+.odright {
+  
+}
+.tabitem {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  white-space: nowrap;
+  gap: 5px
+}
+.ordercard {
+  min-width: 500px;
+
+}
+.tabitem:last-of-type > span:last-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.orderinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.ordercont, .ordercard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.ordercont {
+  height: auto
+}
+.orderitem {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+}
+.orderitem .orderimg {
+  width: 150px;
+  height: 150px;
+}
+.orderimg img{
+  width: 100%;
+  height: 100%
+}
+.innerordercont {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 12px
+}
+.innerordercont button {
+  width: 100%
+}
+.innerordercont {
+  text-transform: uppercase
+}
+.ordercontrols {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.ordercontrols {
+  width: 151px
+}
+.ordercontrols .blue {
+  background-color: var(--theme-color)
+}
+.statusord select {
+  width: 100%;
+}
+.innereditorder .flexed {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px
+}
+.editorder {
+  width: 350px;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  top: 100px;
+  opacity: 0;
+  height: auto;
+  max-height: 95vh;;
+  background-color: #Fff
+}
+.modal-enter-done .editorder {
+  top: 0;
+  opacity: 1;
+}
+.editorder textarea {
+  min-height: 50px;
+}
+.editorder textarea::-webkit-scrollbar {
+  width: 0
+}
+.editorder textarea:disabled, .editorder select:disabled, .editorder select[disabled] > option  {
+  background-color: #eeeeee;
+  color:initial;
+  cursor: no-drop
+
+}
+.editorder .controlbtns {
+  display: flex;
+  gap: 10px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.darkdashboard .controlbtns {
+  background-color: #222;
+  padding-top: 10px
+}
+.editorder .controlbtns .appbtn {
+  width: 100%;
+
+}
+ .darkdashboard .editorder .innereditorder .controlbtns .appbtn {
+  background-color: #333 
+}
+.statusord  {
+  max-height: 45vh;
+  overflow-y: auto
+}
+.statusord::-webkit-scrollbar {
+  width: 0;
+}
+
+.saveedit {
+  margin-top: 10px;
+  width: 100%
+}
+.innerallproducts > div::-webkit-scrollbar {
+  height: 0
+}

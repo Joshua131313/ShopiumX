@@ -1,0 +1,46 @@
+.sidetabs {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  min-height: 200px;
+  margin: 20px 0;
+  height: auto;
+}
+.tablinks {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: solid 3px #eee
+}
+.tablinks .link {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.tabsroute {
+  width: 100%
+}
+.tab {
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.tablinks .link {
+  transition: all 0.3s;
+  font-size: 13px
+}
+.link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 0%;
+  background-color: var(--theme-color);
+  right: -3px;
+  top: 0;
+}
+.activelink::after {
+  height: 100%;
+  transition: all 0.3s;
+}

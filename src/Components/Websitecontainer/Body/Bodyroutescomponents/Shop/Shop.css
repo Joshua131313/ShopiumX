@@ -1,0 +1,23 @@
+.view {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 12%;
+  gap: 10px;
+}
+.view i {
+  color: var(--gray-text)
+}
+.view .active {
+  color: #222
+}
+.sidebannerproducts {
+  display: grid;
+  grid-template-columns: 200px 1fr
+}
+.filtersidebar {
+  top: 90px;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  gap: 30px
+}

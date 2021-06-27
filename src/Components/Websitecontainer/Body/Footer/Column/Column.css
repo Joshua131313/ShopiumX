@@ -1,0 +1,94 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column div {
+  display: flex;
+  flex-direction: column;
+}
+.column:first-of-type {
+  gap: 20px
+}
+.column:first-of-type div div {
+  flex-direction: row;
+  justify-content: space-around
+}
+.column a {
+  margin: 10px 0;
+  font-size: 13px
+}
+.column div a:hover {
+  color: var(--theme-color);
+  text-decoration: underline
+}
+ .fa-cc-visa {
+  color: #1A1F71
+}
+ .fa-cc-paypal {
+  color: #009cde
+}
+.fa-cc-mastercard {
+  color: #000
+}
+.fa-cc-amex {
+  color: #002663
+}
+.column  div img {
+  width: 30px;
+  height: 25px;
+  border-radius: 5px;
+  margin-top: 10px
+}
+.column {
+}
+
+.column .col {
+  overflow: hidden;
+  max-height: 500px;
+  transition: all 0.3s;
+}
+.column h3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;;
+}
+.column h3 i {
+  display: none
+}
+
+@media (max-width: 650px) {
+  .columns {
+    flex-direction: column;
+    padding: 20px 10%
+  }
+  .column:first-of-type {
+    margin-bottom: 20px
+  }
+  .column:first-of-type {
+    justify-content: flex-start;
+    align-items: flex-start
+  }
+  .column .col {
+    max-height: 0
+  }
+  .column .activecol {
+    max-height: 500px;
+  }
+  .column h3 {
+    cursor: pointer;
+    transition: all 0.3s
+  }
+  .column h3:hover {
+    color: var(--theme-color)
+  }
+  .column .activecoltitle i {
+    transform: rotate(90deg)
+  }
+  .column h3 i {
+    display: block
+  }
+  .column .col {
+    padding-left: 20px;
+    margin-top: 20px
+  }
+}

@@ -1,0 +1,36 @@
+.carouselbanner {
+  height: 75vh;
+  min-height: 400px
+}
+.progress {
+  height: 2px;
+  z-index: 999;
+}
+.progress > div {
+  position: absolute;
+  background-color:var(--theme-color);
+  height: 100%;
+  width: 0;
+}
+.progress .activeprogress {
+  width: 100%;
+  transition: linear
+}
+.carouselcontrols {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  gap: 35px;
+  padding: 20px 10%;
+  font-weight: bold; 
+  justify-content: center;
+}
+.carouselcontrols span {
+  cursor: pointer;
+  transition: all 0.3s
+}
+
+.carouselcontrols .activecarouselitem i, .carouselcontrols i:hover {
+  color: var(--theme-color);
+}

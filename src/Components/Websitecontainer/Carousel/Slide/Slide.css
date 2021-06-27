@@ -1,0 +1,109 @@
+.slides {
+  height: 100%;
+}
+
+.slides .slide {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+.slidetitles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}
+
+.slides .slide.active {
+  opacity: 1;
+}
+.slidecont {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 1;
+  transform: translateY(50px);
+  transition: all 0.7s;
+  opacity: 0;
+  transition-delay: 0.4s
+}
+.white .slidecont {
+  color: #fff
+}
+.white .slidecont button {
+  background-color: #fff;
+  color: #000
+}
+.active .slidecont {
+  transform: initial;
+  opacity: 1;
+}
+.slidecont > * {
+  transition: all 0.3s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.slide button {
+  flex-direction: row-reverse;
+}
+.slide .appbtn i {
+  margin-left: 10px
+}
+.slide .appbtn:hover i {
+margin-left: 20px
+}
+.pause i:hover {
+  color: var(--theme-color)
+}
+.leftimg {
+  display: flex;
+  gap: 10px
+}
+.leftimg .slidecont .slidetitles {
+  flex-direction: column-reverse
+}
+.leftimg .img2 {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-80px);
+}
+.active .img2 {
+  left: 0;
+  opacity: 1;
+  transform: translateX(0);
+}
+.img2 img {
+  widows: 100%;
+  z-index: 1;
+  object-fit: contain;
+  max-height: 6;
+  max-height: 400px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slides .center  {
+  justify-content: center
+}
+.center .slidecont {
+  text-align: center
+}
+.center .slidecont a {
+  justify-content: center;
+  display: flex;
+}

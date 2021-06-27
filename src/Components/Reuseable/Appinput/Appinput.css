@@ -1,0 +1,21 @@
+.appinput {
+  display: flex;
+  flex-direction: column;
+}
+.appinput span {
+  font-size: 13px;
+}
+.inp i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 12px;
+  left: 10px;
+}
+.inp input {
+  padding-left: 30px
+}
+.inp input:valid + i, .inp input:focus + i {
+  color: var(--theme-color)
+}

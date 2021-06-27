@@ -1,0 +1,58 @@
+.filterexpand h3 {
+  padding: 0 0 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--gray-text);
+  transition: all 0.3s
+}
+.filterexpand h3 i {
+  margin-right: 5px
+}
+.filterexpand h3:hover, .filterexpandactive h3 {
+  color: #222
+}
+.filterexpand h3:hover i, .filterexpandactive h3 i{
+  margin-right: 10px;
+}
+.filterexpandactive h3 i {
+  transform: rotate(90deg)
+}
+.custom-checkbox-root .MuiSvgIcon-root{
+  width: 16px;
+  height: 16px;
+}
+.filterexpand .col {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 15px;
+}
+.filterexpand .col label span{
+  font-size: 13px;
+}
+.spacersidebar {
+  border-right: solid 1px #eee
+}
+.filtersidebar {
+  overflow: scroll;
+  height: calc(100vh - 70px);
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%
+}
+.filtersidebar::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+.expand {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: all 0.3s
+}
+.expanded {
+  max-height: 300px;
+  overflow-y: scroll
+}
+.expanded::-webkit-scrollbar {
+  width: 2px
+}

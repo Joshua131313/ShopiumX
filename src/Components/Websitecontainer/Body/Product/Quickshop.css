@@ -1,0 +1,133 @@
+.quickshop {
+  position: fixed;
+  width: 700px;
+  max-width: 80%;
+  height:500px;
+  background-color: #fff;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1100;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  overflow: hidden;
+}
+
+.quickshop .fa-times {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  font-size: 23px;
+  z-index: 10;
+}
+.quickshop h2 {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.screen {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  top: 0;
+  z-index: 1000;
+  cursor: url(https://i.imgur.com/GSfMhIM.png), auto;
+}
+ .quickview-enter-done + .quickshop{
+  opacity: 1;
+ }
+.quickshop .horizontal-menu {
+  width: 300px;
+  padding: 0;
+  height: 500px;
+}
+.quickshop .horizontal-menu img {
+  width: 300px;
+  height: 500px;
+
+}
+.quickshop .horizontal-menu .arrow {
+  left: 10px
+} 
+ .quickshop .horizontal-menu .arrow:last-of-type {
+  right: 10px;
+  left: initial
+}
+.quickshop .horizontal-menu {
+} 
+
+.quickshop .quickshopitem {
+  width: 100%;
+  padding: 20px;
+}
+.quickshopitem .pricetag {
+  display: flex;
+  align-items: center;
+  
+}
+.contentproduct {
+  margin-top: 10px
+}
+.productdetail {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  align-items: center;
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 15px;
+}
+.productdetail span:last-of-type {
+  font-size: 12px
+}
+.productbtns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.productbtns button {
+  width: 100%;
+  justify-content: center;
+  height: 40px
+}
+.quickshop .imgwrapper .slide div div div img {
+  height: 1200px
+}
+@media (max-width: 750px) {
+  .quickshop {
+    display: grid;
+    grid-template-rows: 400px 1fr;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+ .quickshop .horizontal-menu {
+   width: 500px;
+   left: 50%;
+   transform: translateX(-50%);
+  }
+ .quickshop .horizontal-menu img {
+  width: 500px;
+}
+  .quickshopitem {
+    overflow-x: initial
+  }
+}
+@media (max-width: 550px) {
+  .quickshop .horizontal-menu {
+    width: 370px
+  }
+  .quickshop .horizontal-menu img {
+    width: 370px
+  }
+}
+@media (max-width: 500px) {
+  .quickshop .horizontal-menu {
+    width: 100%
+  }
+  .quickshop .horizontal-menu img {
+    width: 100%
+  }
+}

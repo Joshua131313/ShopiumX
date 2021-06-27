@@ -1,0 +1,29 @@
+
+ .plusminus {
+  display: flex;
+  justify-content: center;
+}
+
+ .plusminus {
+  width: auto;
+
+}
+.plusminus .qty {
+  background-color: #ddd;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center
+}
+.plusminus button:hover i{
+  color: #fff
+}
+.disabledplusminus button {
+  display: none
+}
+.disabledplusminus .qty {
+  background-color: #fff
+}
+.disabledplusminus input {
+  background-color: #fff;
+}

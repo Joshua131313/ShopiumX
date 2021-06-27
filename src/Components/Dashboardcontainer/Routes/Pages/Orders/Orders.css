@@ -1,0 +1,21 @@
+.darkdashboard .innerallproducts .ordercard .appbtn {
+  background-color: #222
+}
+.darkdashboard .innerallproducts .ordercard .blue {
+  background-color: var(--theme-color)
+}
+.darkdashboard .trackingcontain {
+  background-color: #222
+}
+.dashboard .closeicon {
+  color: #fff;
+}
+.darkdashboard .trackordermodal .sb span {
+  color: #fff  
+}
+.darkdashboard .editorder {
+  background-color: #222;
+}
+.darkdashboard .innerallproducts .ordercard .appbtn.saveedit {
+  background-color: #333
+}

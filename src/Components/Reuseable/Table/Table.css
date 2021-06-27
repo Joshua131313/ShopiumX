@@ -1,0 +1,23 @@
+.apptable {
+  width: 100%;
+  border-spacing:  10px;
+}
+.apptable tr {
+  width: 100%;
+  margin-top: 10px
+}
+.apptable tr:first-of-type th {
+  font-size: 14px
+}
+.container tr:first-of-type th {
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 10px;
+}
+
+.apptable td, .apptable th {
+  text-align: left;
+}
+.apptable td {
+  font-size: 12px
+}
+

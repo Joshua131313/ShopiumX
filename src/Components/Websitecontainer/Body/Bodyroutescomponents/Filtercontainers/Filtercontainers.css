@@ -1,0 +1,145 @@
+.filterbanner {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 5%;
+  
+}
+
+.filtercol {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  width: 300px;
+  border: solid 1px #f7f7f7;
+  max-width: 100%;
+}
+
+.slider {
+  width: 90%;
+}
+.MuiSlider-markLabel {
+  font-size: 10px !important
+}
+.filtercol .colors .color, .allcolors {
+  border: solid 1px #eee;
+  width: 15px;
+  height: 15px;
+  font-size: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%
+}
+.allcolors {
+  width: 22px;
+  height: 22px
+} 
+.body .MuiTablePagination-root:last-child {
+  padding: 0 10%
+}
+.body .MuiPaper-root{
+  box-shadow: none
+}
+.body .MuiIconButton-root {
+  padding: 6px
+}
+.allcolors {
+  background-color: #fff;
+  color: #222;
+  font-size: 11px;
+  border: solid 1px #eee
+}
+.filtercol .colors {
+  justify-content: flex-start
+} 
+
+
+.selectmore span {
+  font-size: 12px;
+  margin-top: 5px;
+  color: var(--gray-text);
+  cursor: pointer;
+}
+.filtercol select {
+  outline: none;
+  border: solid 1px #ddd;
+  padding: 10px
+}
+.filtercol h4 {
+  margin-bottom: 20px
+}
+.sizes .size, .sizes .clearchoices {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  background-color: #fff;
+  font-size: 10px;
+  cursor: pointer;
+  border: solid 1px #222;
+  transition: all 0.3s;
+  border-radius: 0
+}
+.sizes .active, .sizes .size:hover, .sizes .clearchoices {
+  border: solid 1px transparent;
+  background-color: #222;
+  color: #fff
+}
+.sizes .clearchoices:hover {
+  background-color: #333
+}
+.sizes {
+  
+}
+.selectmore span {
+  transition: all 0.3s
+}
+.selectmore span:hover {
+  color: #222
+}
+.allcolorsrcont {
+  position: absolute;
+  width: 100%;
+  overflow: scroll;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: var(--light-shadow);
+  padding: 20px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s
+}
+.allcolorsrcont h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px
+}
+.showcolors {
+  opacity: 1;
+  pointer-events: initial
+}
+.allcolorsrcont div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px
+}
+.allcolorsrcont::-webkit-scrollbar {
+  width: 0;
+  height: 0
+}
+.MuiTable-root .containertitle {
+  margin: 0
+}
+.MuiTable-root .products {
+  margin-top: 10px
+}

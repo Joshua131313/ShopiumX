@@ -1,0 +1,71 @@
+.imgwrapper ul {
+  width: 100%;
+  height: 100%
+}
+.imgwrapper ul li, .imgwrapper ul img, .slider-wrapper 
+{
+  width: 100%;
+  height: 100%
+}
+.imgwrapper .carousel:last-of-type {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: initial;
+  bottom: 20px;
+}
+.control-dots {
+  display: none
+}
+.imgwrapper .carousel .thumbs-wrapper {
+  margin: 0
+}
+.imgwrapper .carousel .thumbs-wrapper  button {
+  display: none
+}
+.imgwrapper .carousel .thumbs-wrapper  ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content:center
+}
+.imgwrapper .carousel .thumbs-wrapper  ul  li {
+  margin: 0 10px;
+  height: 60px;
+  max-width: 100%;
+  border: none;
+  outline: none
+}
+
+.imgwrapper .carousel .thumb.selected, .imgwrapper .carousel .thumb:hover {
+  border: solid 1px black
+}
+.carousel-status {
+  display: none
+}
+.imgwrapper .carousel  .control-arrow:hover {
+  background: initial;
+}
+.imgwrapper .carousel  .control-arrow::before {
+  content: '\f054';
+  border-left: none;
+  border-right: none;
+  font-family: 'Font Awesome 5 Pro';
+  color: #000;
+  font-size: 14px
+}
+.imgwrapper .carousel  .control-arrow:first-of-type::before {
+  content: '\f053'
+}
+.carousel-slider, .carousel-root {
+  height: 100%;
+}
+.imgwrapper .slide div {
+  height: 100%
+}
+.imgwrapper .slide div div div img {
+  height: 900px
+}
+.selected div {
+  left: 0 !important
+}

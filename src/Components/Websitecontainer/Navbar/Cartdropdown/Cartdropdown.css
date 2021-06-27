@@ -1,0 +1,186 @@
+.cartdropdown {
+  position: absolute;
+  top: 60px;
+  width:310px;
+  background-color: #fff;
+  height: auto;
+  right: -70px;
+  box-shadow: var(--light-shadow);
+  padding: 20px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 10;
+}
+.emptybag {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 0
+}
+.emptybag i {
+  cursor: initial
+}
+.emptybag i:hover {
+  color: initial
+}
+.cartdropdown-enter-done {
+  opacity: 1;
+  top: 30px;
+}
+.productscart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 300px;
+  overflow-y: scroll;
+  padding:  10px 0;
+  padding-bottom: 25px
+}
+
+.productscart::-webkit-scrollbar {
+  width: 0
+}
+.cartdropdown h3 {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.cartcard  {
+  width: 100%;
+  height: 100px;  
+  display: flex;
+  gap: 5px;
+  /* border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd; */
+  padding: 10px 0
+}
+.cartcard:first-of-type::before {
+  top: 0;
+}
+.cartcard::after, .cartcard:first-of-type::before  {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #ddd;
+  bottom: -10px;
+}
+.cartcardimg {
+  width: 90px;
+  height: 100%;
+  display: flex;
+}
+.cartcard  img {
+  width: 100%;
+  height: 100%;
+}
+.cartcardinfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  gap: 5px;
+
+}
+.cardinfo p {
+  font-weight: lighter
+}
+.cartcardinfo .plusminus {
+  flex-direction: column-reverse;
+  width: 30px;
+  height: 100%
+}
+.cartcardinfo .plusminus > * {
+  width: 20px;
+  height: 20px;
+}
+.cartcardinfo .plusminus button {
+  justify-content: center;
+  padding: 0;
+  align-items: center
+}
+.cartcardinfo .plusminus button i {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.cartcardinfo .plusminus input {
+  padding: 0;
+  font-size: 10px;
+  border-radius: 0
+}
+.qtyprice {
+  display: flex;
+  align-items: center;
+  gap: 5px
+}
+.qtyprice i {
+  font-size: 12px;
+  cursor: auto;
+}
+.qtyprice i:hover {
+  color: #000
+}
+.qtyprice p {
+  font-weight: bold
+}
+.pricetotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px
+}
+.subtotal {
+  display: flex;
+  flex-direction: column;
+}
+.checkoutbtns button {
+  width: 100%;
+  justify-content: center;
+  height: 40px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px
+}
+
+.cartcard .price {
+  font-size: 13px;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.cartcard .price h3 {
+  font-size: 13px
+}
+.cartcard .price h3 {
+  padding: 0px
+}
+.emptycont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.empty a {
+  color: var(--theme-color);
+}
+.empty a:hover {
+  text-decoration: underline
+}
+.emptyc {
+  
+}
+.emptyimg {
+  background-image: url(https://i.imgur.com/8AaofxH.png);
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}

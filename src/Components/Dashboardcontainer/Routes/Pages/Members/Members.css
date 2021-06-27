@@ -1,0 +1,11 @@
+.innermemberpage .buyergiftcards {
+  display: block
+}
+.memberpagegifts .buyergiftcards {
+  display: flex;
+}
+.innermemberpage  {
+  display: flex;
+  flex-direction: column;
+  gap: 15px
+}

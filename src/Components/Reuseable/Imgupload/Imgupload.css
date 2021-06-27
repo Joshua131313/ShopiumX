@@ -1,0 +1,17 @@
+.imgcontupload  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.imgplaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  display: block;
+  position: relative
+}
+.imgupload {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}

@@ -1,0 +1,46 @@
+.detailcard {
+  min-width: 270px;
+  height: 180px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 270px;
+}
+.detailcard .ddcc {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px
+}
+.ddcc i {
+  color: #fff;
+}
+.ddcc div:first-of-type strong {
+  margin-top: 5px;
+  display: block
+}
+.ddcc div:first-of-type i {
+  margin-right: 3px
+}
+.iconddcc {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%
+}
+.iconddcc i {
+
+}
+.detailcard .apexchartsarea {
+  bottom: -36px;
+  width: 100%;
+  left: -5px;
+  pointer-events: none
+}

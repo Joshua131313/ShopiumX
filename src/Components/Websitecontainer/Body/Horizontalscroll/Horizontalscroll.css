@@ -1,0 +1,46 @@
+.arrow {
+  position: absolute;
+  z-index: 1;
+  left: 35px;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  box-shadow: var(--light-shadow);
+  opacity: 1;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.horizontalskeletons {
+  overflow-x: auto;
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto
+}
+.horizontalskeletons::-webkit-scrollbar {
+  height: 0
+}
+.horizontalskeletons .skeleton {
+  min-width: 250px;
+}
+.arrow:last-of-type {
+  right: 35px;
+  left: initial
+}
+
+
+.menu-wrapper .skeleton {
+  margin-right: 10px;
+}
+.horizontal-menu:hover .arrow {
+  opacity: 1;
+}
+.horizontal-menu .arrow.hidearrow {
+  opacity: 0;
+  pointer-events: none
+}

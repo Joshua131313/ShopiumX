@@ -1,0 +1,10 @@
+.filterorders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.filterorders::-webkit-scrollbar {
+  height: 5px
+}

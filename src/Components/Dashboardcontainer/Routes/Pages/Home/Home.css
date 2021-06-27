@@ -1,0 +1,22 @@
+.detailcardscont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0
+}
+.gridcontainers {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.gridcontainers, .halfcont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.halfcont {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: grid;
+  width: 100%;
+}

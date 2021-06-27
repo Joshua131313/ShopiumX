@@ -1,0 +1,30 @@
+.collection {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  max-height: 340px;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+  cursor: pointer;
+}
+.collection:hover .collectiontext .hr {
+  width: 35px
+}
+.collection .collectiontext div{
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+.collection .hr {
+  width: 25px;
+  height: 2px;
+  display: block;
+  background-color: #000;
+  transition: all 0.3s
+}
+.collection img {
+  height: 100%;
+  width: 100%
+}

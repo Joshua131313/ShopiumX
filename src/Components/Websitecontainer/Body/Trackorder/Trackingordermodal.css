@@ -1,0 +1,152 @@
+.trackingcontain {
+  width: 80%;
+  height: 90vh;
+  background-color: #fff;
+  max-width: 650px;
+  padding: 20px;
+  transition: all 0.3s;
+  opacity: 0;
+  top: 100px;
+}
+.modal-enter-done .trackingcontain {
+  opacity: 1;
+  top: 0
+}
+.trackingcontain .title {
+  display: flex;
+  justify-content: space-between
+}
+.bordercont {
+  border: solid 1px #eee;
+  padding: 10px;
+}
+.title div, .title div span {
+  display: flex;
+  white-space: nowrap;
+  flex-direction: column;
+  gap: 10px
+}
+.title div span {
+  color: var(--gray-text);
+  font-size: 12px
+}
+.title .trackingnumber {
+  flex-direction: row;
+}
+.copy {
+  color: var(--gray-text);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.3s
+}
+.copy:hover {
+  color: #333
+}
+.carrier {
+  text-transform: capitalize
+}
+.trackingbar {
+  border-top: none;
+  padding-bottom: 20px
+}
+.progressbar {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  height: 15px 
+}
+.app .progressbar i {
+  font-size: 14px;
+  right: 0;
+  color: #333;
+  background-color: #fff;
+  border: solid 3px #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.percent {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 15px;
+  transition: all 0.3s;
+  justify-content: space-between;
+  min-width: 30px;
+}
+.copyid {
+  width: 100%;
+  font-size: 12px;
+  justify-content:flex-end;
+  display: flex;
+}
+.trackingupdates  {
+  border-top: none;
+  min-height: 45%;
+  max-height: 50%;
+  overflow-y: auto
+}
+.trackingupdates::-webkit-scrollbar {
+  width: 3px
+}
+.orderupdate, .orderupdateinfo {
+  display: flex;
+}
+
+.orderupdate {
+  align-items: center;
+  padding: 10px 0
+}
+.orderupdateinfo {
+  flex-direction: column;
+  width: 100%
+}
+ .orderupdate span {
+  color: var(--gray-text);
+  font-size: 13px  
+}
+.statusicon {
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  position: relative;
+  border: solid 1px #ddd;
+  border-radius: 50%;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: #fff
+}
+.innerdot {
+  width:  50%;
+  height: 50%;
+  background-color: #333;
+  border-radius: 50%
+}
+
+.orderupdate::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  background-color: #ddd;
+  left: 8px;
+  height: 100%
+}
+.sb {
+  display: flex;
+  width: 100%;
+  flex-direction: column
+}
+.app .sb span:last-of-type {
+  color: #333;
+  margin-top: 5px;
+  text-decoration: underline
+}
